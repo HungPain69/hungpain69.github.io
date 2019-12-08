@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.Reponsive{
+    position: relative;
+}
+.Menu{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+}
+
+
+.Menu-logo{
+ 
+}
+.Menu-logo-content{
+    font-family: 'Allura', cursive;
+	font-size: 32px;
+	color: #fb2274;
+    
+}
+.Menu-list{
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.Menu-list__item a{
+    display: flex;
+    margin: 0 15px;
+    color: #fff;
+}
+
+/****************************Main*********************************/
+
+.Banner{
+    background: url('img/p3.jpg') ;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    flex-direction: column;
+}
+.Banner-title__base{
+    color: #ffffff;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    
+    
+}
+.Banner-title__txt{
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #fb2274;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Banner-quote{
+    margin-top:30px;
+}
+
+/* body */
+.Bodyy{
+    background: #f5f5f5;
+    min-height: 100vh;
+    /* height: 100vh;
+    overflow: auto  ; */
+    padding:0 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+}
+h1{
+    color: #444444;
+    font-family: 'Allura', cursive;
+    font-size: 38px;
+    text-transform: uppercase;
+    word-spacing: 25px;
+    letter-spacing: 5px;
+    padding-top:12vh ;
+    
+}
+.Body-content{
+    font-size: 14px;
+    line-height: 20px;
+    color: #a9a9a9;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.Body-list{
+    display: flex;
+    justify-content: space-between;
+    
+    
+} 
+.Body-list-sub__content{
+    color: #fb2274;
+}
+
+.Body-list-sub {
+    /* background: green; */
+    width: 30%;
+    /* margin: 30px; */
+}
+.Body-list-sub img{
+    width: 100%;
+}
+/********************************************************* endpage2******************************************************/
+
+/************************************************** page 3***************************************************************/
+.Contact{
+    background: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+ 
+}
+.Contact-form{
+    padding-top: 12vh;
+}
+.Contact-form input{
+    width: 400px;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    /* border-radius: ; */
+}
+.Contact-form__msg textarea{
+    height: 80px;
+    padding-top: 0px;
+    width: 400px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+}
+.Contact-btn button{
+    margin-top: 20px;
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    border: 2px solid #fb2274;
+    color: hsl(258, 70%, 40%);;
+    display: block;
+    margin: 25px auto 0;
+    border-radius: 4px;
+    background: #ffffff;
+}
+/***********************************************************page3***********************************  */
+.Ourteam{
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    background: #f5f5f5;
+    text-align: center;
+
+}
+.Ourteam-img1{
+    margin-top: 5vh;
+}
+.Ourteam-img1 ,
+.Ourteam-img2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+}
+.Ourteam-member{
+    width: 30%;
+    cursor: pointer;
+    overflow: hidden;
+}
+.Ourteam-member img{
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.Ourteam-member img:hover{
+    transform: scale(1.1);
+}
+/* ***********************footer******************** */
+.footer{
+	width: 100%;
+	text-align: center;
+	background: #444444;
+	padding: 20px 0;
+}
+
+.footer a{
+	color: #fff;
+}
+@media (max-width: 720px){
+    .Menu{
+        flex-direction: column;
+    }
+    .Menu-list{
+        
+        flex-direction: column;
+        
+    }
+    .Menu-logo{
+        text-align: center;
+    }
+    .Menu-list__item{
+        justify-content: center;
+        
+    }
+}
